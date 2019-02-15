@@ -1,9 +1,5 @@
 $(() => {
-  console.log('js connected')
-  var btn = document.querySelector('button');
+  console.log("js connectedd");
 
-  $(btn).on('click', ()=> {
-    alert('hi')
-  })
-  
-})
+
+});

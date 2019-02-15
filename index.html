@@ -17,66 +17,82 @@
       integrity="sha384-PDle/QlgIONtM1aqA2Qemk5gPOE7wFq8+Em+G/hmo5Iq0CCmYZLv3fVRDJ4MMwEA"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
-      crossorigin="anonymous">
-    <link rel="icon" type="image/png" href="Assets/Images/Vicon.png" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
+    <link rel="icon" type="image/png" href="Assets/Images/VStarIcon.jpg" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat+Alternates"
+      rel="stylesheet"
+    />
     <script
       src="https://code.jquery.com/jquery-3.3.1.js"
       integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
       crossorigin="anonymous"
     ></script>
-    <script src="main.js"></script>
   </head>
+
   <body>
     <header>
-      <h1>V Star List</h1>
+      <nav class="NavBar" id="mynavbar">
+        <a href="index.html"><i class="fas fa-home"></i>Home</a>
+        <a href="Pages/about.html"><i class="fas fa-info"></i>About Us</a>
+        <a href="Pages/blog.html"><i class="far fa-comment-alt"></i>Blog</a>
+        <a href="Pages/contact.html"
+          ><i class="far fa-address-card"></i>Contact</a
+        >
+      </nav>
+
+      <div class="HeaderLogo">
+        <img id="VLogo" src="Assets/Images/VStarIcon.jpg" />
+        <p>VStarList</p>
+      </div>
     </header>
-    <div>
-      <section class='fashion'>
-        <p>Fashion</p>
-        <a href='Pages/fashion.html'>
-          <img src='Assets/Images/FashionBeauty/FB7.jpg'>
+
+    <div class="container">
+      <div class="item fashion">
+        <a href="Pages/fashion.html">
+          <img src="Assets/Images/FashionBeauty/FB7.jpg" />
           <i class="fas fa-shopping-bag"></i>
         </a>
-      </section>
+        <p>Fashion & Beauty</p>
+      </div>
 
-      <section class='food'>
+      <div class="item food">
+        <a href="Pages/food.html">
+          <img src="Assets/Images/FoodDrink/food5.jpg" />
+          <i class="fas fa-ice-cream"></i>
+        </a>
         <p>Food</p>
-        <a href='Pages/food.html'>
-          <img src='Assets/Images/FoodDrink/food2.jpg'>
-          <i class="fas fa-cookie-bite"></i>
-        </a>
-      </section>
+      </div>
 
-      <section class='travel'>
-        <p>Travel</p>
-        <a href='Pages/travel.html'>
-          <img src='Assets/Images/TravelDestination/travel3.jpg'>
-          <i class="fas fa-plane-departure"></i>
+      <div class="item travel">
+        <a href="Pages/travel.html">
+          <img src="Assets/Images/TravelDestination/travel3.jpg" />
+          <i class="far fa-paper-plane"></i>
         </a>
-      </section>
+        <p>Travel & Destinations</p>
+      </div>
 
-      <section class='health'>
-        <p>Health</p>
-        <a href='Pages/health.html'>
-          <img src='Assets/Images/HealthWellness/wellness3.jpg'>
+      <div class="item health">
+        <a href="Pages/health.html">
+          <img src="Assets/Images/HealthWellness/wellness5.jpg" />
           <i class="fas fa-spa"></i>
         </a>
-      </section>
+        <p>Health & Wellness</p>
+      </div>
 
-      <section class='technology'>
-        <p>Technology</p>
-        <a href='Pages/technology.html'>
-          <img src='Assets/Images/GadgetsTechnology/tech1.jpg'>
+      <div class="item technology">
+        <a href="Pages/technology.html">
+          <img src="Assets/Images/GadgetsTechnology/tech1.jpg" />
           <i class="fas fa-laptop-code"></i>
         </a>
-      </section>
+        <p>Gadgets & Technology</p>
+      </div>
     </div>
-
-
-
-
-
 
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -93,5 +109,6 @@
       integrity="sha384-7aThvCh9TypR7fIc2HV4O/nFMVCBwyIUKL8XCtKE+8xgCgl/PQGuFsvShjr74PBp"
       crossorigin="anonymous"
     ></script>
+    <script src="main.js"></script>
   </body>
 </html>

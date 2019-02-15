@@ -1,14 +1,179 @@
-html {
+/* General Styles */
+body {
   margin: 0;
-  padding: 0;
 }
 
-h1 {
+p,
+a {
+  font-family: "Montserrat Alternates", sans-serif;
+}
+
+/* NavBar Styles */
+.NavBar {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.NavBar a {
+  font-size: 25px;
+  margin: 20px;
+  text-decoration: none;
+  color: #95a5a6;
+  border-bottom: 1px solid #5792bd;
+  transition: color 0.5s ease-out;
+}
+
+.NavBar a:hover {
+  text-decoration: none;
+  color: #3498db;
+  border-bottom-color: #3498db;
+}
+
+.NavBar i {
+  margin-right: 10px;
+}
+
+.NavBar .icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .NavBar {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #34495e;
+  }
+
+  .NavBar a {
+    color: white;
+  }
+}
+
+/* Header Styles */
+.HeaderLogo {
+  font-size: 100px;
+  color: #5792bd;
+  padding: 50px 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#VLogo {
+  max-width: 100%;
+  height: 200px;
+}
+
+@media screen and (max-width: 600px) {
+  .HeaderLogo {
+    flex-direction: column;
+    align-items: center;
+    font-size: 50px;
+  }
+
+  #VLogo {
+    height: 150px;
+  }
+}
+
+/* Category Styles */
+.container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+div.item {
+  position: relative;
+  float: left;
+  overflow: hidden;
+  margin: 10px 1%;
+  min-width: 220px;
+  max-width: 310px;
+  width: 100%;
+  background: #000000;
   text-align: center;
-  padding-top: 50px;
+  box-shadow: 0 0 5px #000000;
 }
 
-img {
-   height: 500px;
-   /* width: 333px; */
+div.item * {
+  box-sizing: border-box;
+}
+
+div.item img {
+  max-width: 100%;
+  vertical-align: top;
+  height: 225px;
+}
+
+div.item i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 50%;
+  font-size: 34px;
+  color: #000000;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  background: #ffffff;
+  text-align: center;
+}
+
+div.item:hover img,
+div.item.hover_effect img {
+  opacity: 0.8;
+  filter: grayscale(55%);
+}
+
+div.item * {
+  transition: all 0.35s ease-in-out;
+}
+
+div.item i {
+  transform: translate(-50%, -50%) scale(0);
+  transition: transform 400ms 100ms ease;
+}
+
+div.item:hover i {
+  transform: translate(-50%, -50%) scale(1);
+  transition: transform 400ms 100ms ease;
+}
+
+div.item.fashion {
+  background-color: #e74c3c;
+}
+div.item.fashion i {
+  color: #e74c3c;
+}
+
+div.item.food {
+  background-color: #61c3d5;
+}
+div.item.food i {
+  color: #61c3d5;
+}
+
+div.item.travel {
+  background-color: #4e63cf;
+}
+div.item.travel i {
+  color: #4e63cf;
+}
+
+div.item.health {
+  background-color: #4ecd6b;
+}
+div.item.health i {
+  color: #4ecd6b;
+}
+
+div.item.technology {
+  background-color: #e5ec4d;
+}
+div.item.technology i {
+  color: #e5ec4d;
 }
