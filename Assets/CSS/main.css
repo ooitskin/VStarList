@@ -4,78 +4,21 @@ body {
 }
 
 p,
-a {
+a,
+h1,
+h2,
+h3 {
   font-family: "Montserrat Alternates", sans-serif;
+  text-align: center;
+}
+div.container {
+  padding: 50px;
 }
 
 /* NavBar Styles */
-.NavBar {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-}
-
-.NavBar a {
-  font-size: 25px;
-  margin: 20px;
-  text-decoration: none;
-  color: #95a5a6;
-  border-bottom: 1px solid #5792bd;
-  transition: color 0.5s ease-out;
-}
-
-.NavBar a:hover {
-  text-decoration: none;
-  color: #3498db;
-  border-bottom-color: #3498db;
-}
-
-.NavBar i {
-  margin-right: 10px;
-}
-
-.NavBar .icon {
-  display: none;
-}
-
-@media screen and (max-width: 600px) {
-  .NavBar {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background: #34495e;
-  }
-
-  .NavBar a {
-    color: white;
-  }
-}
-
-/* Header Styles */
-.HeaderLogo {
-  font-size: 100px;
-  color: #5792bd;
-  padding: 50px 50px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-#VLogo {
+#VLogo2 {
   max-width: 100%;
-  height: 200px;
-}
-
-@media screen and (max-width: 600px) {
-  .HeaderLogo {
-    flex-direction: column;
-    align-items: center;
-    font-size: 50px;
-  }
-
-  #VLogo {
-    height: 150px;
-  }
+  height: 100px;
 }
 
 /* Category Styles */
@@ -167,6 +110,7 @@ div.item.travel i {
 div.item.health {
   background-color: #4ecd6b;
 }
+
 div.item.health i {
   color: #4ecd6b;
 }
@@ -174,6 +118,28 @@ div.item.health i {
 div.item.technology {
   background-color: #e5ec4d;
 }
+
 div.item.technology i {
   color: #e5ec4d;
+}
+
+/* About Page Styles */
+div.container.about {
+}
+
+/* Contact Page Styles */
+div.contact-image {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+}
+
+
+/* General Card Styles */
+div.card {
+  margin: 10px;
+}
+
+.card-img-top {
+  height: 200px;
 }

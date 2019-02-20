@@ -3,7 +3,6 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>V Star List</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link
       rel="stylesheet"
@@ -23,7 +22,7 @@
       integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
       crossorigin="anonymous"
     />
-    <link rel="icon" type="image/png" href="Assets/Images/VStarIcon.jpg" />
+    <link rel="icon" type="image/png" href="Assets/Images/VstarListLogo3.png" />
     <link
       href="https://fonts.googleapis.com/css?family=Montserrat+Alternates"
       rel="stylesheet"
@@ -33,24 +32,48 @@
       integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
       crossorigin="anonymous"
     ></script>
+    <title>V Star List</title>
   </head>
 
   <body>
     <header>
-      <nav class="NavBar" id="mynavbar">
-        <a href="index.html"><i class="fas fa-home"></i>Home</a>
-        <a href="Pages/about.html"><i class="fas fa-info"></i>About Us</a>
-        <a href="Pages/blog.html"><i class="far fa-comment-alt"></i>Blog</a>
-        <a href="Pages/contact.html"
-          ><i class="far fa-address-card"></i>Contact</a
+      <nav class="navbar navbar-inverse navbar-light navbar-expand-lg navbar-fixed-top">
+        <a class="navbar-brand" href="#">
+          <img id="VLogo2" src="Assets/Images/VstarListLogo2.png" />
+        </a>
+        <button
+          class="navbar-toggler"
+          data-toggle="collapse"
+          data-target="#navbarCollapse"
         >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav ml-auto">
+            <li class="navbar-item">
+              <a href="#" class="nav-link">Home</a>
+            </li>
+            <li class="navbar-item">
+              <a href="Pages/about.html" class="nav-link">About</a>
+            </li>
+            <li class="navbar-item">
+              <a href="Pages/blog.html" class="nav-link">Blog</a>
+            </li>
+            <li class="navbar-item">
+              <a href="Pages/contact.html" class="nav-link">Contact</a>
+            </li>
+          </ul>
+        </div>
       </nav>
-
-      <div class="HeaderLogo">
+      <!-- <div class="HeaderLogo">
         <img id="VLogo" src="Assets/Images/VStarIcon.jpg" />
         <p>VStarList</p>
-      </div>
+      </div> -->
     </header>
+    <div class="choosecategory">
+      <h1>Welcome to VStarList</h1>
+      <h3>Please Choose a Category</h3>
+    </div>
 
     <div class="container">
       <div class="item fashion">
@@ -94,9 +117,52 @@
       </div>
     </div>
 
+
+        <div class="container">
+          <div class="item fashion">
+            <a href="Pages/fashion.html">
+              <img src="Assets/Images/FashionBeauty/FB7.jpg" />
+              <i class="fas fa-shopping-bag"></i>
+            </a>
+            <p>Fashion & Beauty</p>
+          </div>
+        
+          <div class="item food">
+            <a href="Pages/food.html">
+              <img src="Assets/Images/FoodDrink/food5.jpg" />
+              <i class="fas fa-ice-cream"></i>
+            </a>
+            <p>Food</p>
+          </div>
+        
+          <div class="item travel">
+            <a href="Pages/travel.html">
+              <img src="Assets/Images/TravelDestination/travel3.jpg" />
+              <i class="far fa-paper-plane"></i>
+            </a>
+            <p>Travel & Destinations</p>
+          </div>
+        
+          <div class="item health">
+            <a href="Pages/health.html">
+              <img src="Assets/Images/HealthWellness/wellness5.jpg" />
+              <i class="fas fa-spa"></i>
+            </a>
+            <p>Health & Wellness</p>
+          </div>
+        
+          <div class="item technology">
+            <a href="Pages/technology.html">
+              <img src="Assets/Images/GadgetsTechnology/tech1.jpg" />
+              <i class="fas fa-laptop-code"></i>
+            </a>
+            <p>Gadgets & Technology</p>
+          </div>
+        </div>
+
     <script
-      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      src="https://code.jquery.com/jquery-3.3.1.js"
+      integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
       crossorigin="anonymous"
     ></script>
     <script
