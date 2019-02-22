@@ -51,7 +51,7 @@ h3 {
   color: #ffffff;
 }
 
-@media only screen and (min-width: 980px) {
+@media only screen and (max-width: 980px) {
   .bg-1,
   .bg-2,
   .bg-3 {
@@ -59,6 +59,12 @@ h3 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+}
+
+@media only screen and (max-width: 1300px) {
+  .bg-3 {
+    flex-direction: row;
   }
 }
 
